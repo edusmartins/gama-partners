@@ -1,0 +1,447 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+	<head>
+		<meta charset="UTF-8" />
+		<meta http-equiv="X-UA-Compatible" content="IE=edge" />
+		<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+		<meta name="”robots”" content="”noindex,nofollow”" />
+
+		<title>Gama Sócios</title>
+
+		<!-- favicon -->
+		<link rel="icon" type="image/png" href="./img/favicon.png" />
+
+		<!-- fontes -->
+		<link rel="preconnect" href="https://fonts.googleapis.com" />
+		<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+		<link
+			href="https://fonts.googleapis.com/css2?family=Montserrat:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+			rel="stylesheet"
+		/>
+
+		<!-- css -->
+		<link rel="stylesheet" href="css/styles.css" />
+
+		<!-- scripts -->
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/gsap.min.js"></script>
+		<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.5.1/ScrollTrigger.min.js"></script>
+		<script src="js/main.js" defer></script>
+	</head>
+	<body>
+		<!-- <div id="header-wrap">
+			<header>
+				<img src="./img/logo-gama.svg" alt="Gama Academy Logo">
+				<ul>
+					<li>O que é?</li>
+					<li>Como funciona?</li>
+					<li>Sobre a Gama</li>
+				</ul>
+			</header>
+		</div>
+		<div id="hero-wrap">
+			<video
+				id="hero-video"
+				autoplay=""
+				loop=""
+				muted=""
+				playsinline=""
+				data-wf-ignore="true"
+			>
+				<source src="img/video-hero.mp4" data-wf-ignore="true" />
+			</video>
+		</div> -->
+		<div id="capa">
+			<video
+				class="capa-img"
+				autoplay=""
+				loop=""
+				muted=""
+				playsinline=""
+				data-wf-ignore="true"
+			>
+				<source src="img/video/bg-como-funciona.mp4" data-wf-ignore="true" />
+			</video>
+			<div id="header-wrapper">
+				<header>
+					<img
+						class="nav-item"
+						id="logo"
+						src="img/logo-gama.svg"
+						alt="Logo da Gama Academy"
+					/>
+					<div class="menu-toggle" onclick="toggleMenu()">
+						<img class="menu-icon" src="img/ico/menu_w.svg" alt="Menu" />
+						<img
+							class="close-icon"
+							src="img/ico/close_w.svg"
+							alt="Fechar menu"
+						/>
+					</div>
+					<nav>
+						<ul>
+							<li>
+								<a class="nav-item" href="#intro-wrap">Introdução</a>
+							</li>
+							<li>
+								<a class="nav-item" href="#o-que-wrap">O que é?</a>
+							</li>
+							<li>
+								<a class="nav-item" href="#como-funciona-wrap"
+									>Como funciona?</a
+								>
+							</li>
+							<li>
+								<a class="nav-item" href="#duvidas-wrap"> Dúvidas </a>
+							</li>
+						</ul>
+					</nav>
+				</header>
+			</div>
+			<div id="home-wrapper">
+				<section id="home-section">
+					<div id="home-video-section">
+						<video
+							id="hero-desktop"
+							autoplay=""
+							loop=""
+							muted=""
+							playsinline=""
+							data-wf-ignore="true"
+						>
+							<source
+								src="img/video/logo-hero-section-desktop.mp4"
+								data-wf-ignore="true"
+							/>
+						</video>
+						<video
+							id="hero-mobile"
+							autoplay=""
+							loop=""
+							muted=""
+							playsinline=""
+							data-wf-ignore="true"
+						>
+							<source
+								src="img/video/logo-hero-section-mobile.mp4"
+								data-wf-ignore="true"
+							/>
+						</video>
+					</div>
+					<div id="home-buttons">
+						<a
+							href="https://docs.google.com/forms/d/e/1FAIpQLSeG_oLpZViJaImcUkkszhdc6AlcB1jvQNWD78H75pgVzwlCtA/viewform"
+							target="_blank"
+						>
+							<button class="filled">Faça sua inscrição</button>
+						</a>
+						<a href="#como-funciona">
+							<button class="outline">Como vai funcionar</button>
+						</a>
+					</div>
+				</section>
+			</div>
+		</div>
+		<div id="intro-wrap">
+			<section id="intro">
+				<div id="intro-text-section">
+					<h2 id="intro-title">
+						<b>
+							Você acelerou carreiras com a gente, chegou a hora de acelerarmos
+							a sua!
+						</b>
+					</h2>
+					<p class="intro-text">
+						Gama Sócios é o nosso programa de stock options, que foi criado para
+						reconhecer e incentivar ainda mais as pessoas black belts que
+						contribuem com o nosso propósito e na evolução constante da empresa.
+					</p>
+					<p class="intro-text">
+						Através do stock options, você recebe um pedacinho do legado que
+						está ajudando a construir.
+					</p>
+				</div>
+				<div style="padding: 0 0 0 0; position: relative" id="intro-video">
+					<iframe
+						src="https://player.vimeo.com/video/657535215?h=170532703c&color=68de5a&title=0&byline=0&portrait=0"
+						style="
+							position: absolute;
+							top: 0;
+							left: 0;
+							width: 100%;
+							height: 100%;
+						"
+						frameborder="0"
+						allow="autoplay; fullscreen; picture-in-picture"
+						allowfullscreen
+					>
+					</iframe>
+				</div>
+				<script src="https://player.vimeo.com/api/player.js"></script>
+			</section>
+		</div>
+		<div id="o-que-wrap">
+			<section id="o-que">
+				<div id="o-que-text-section">
+					<h3 id="o-que-title"><b>O que é um “pedacinho” da Gama?</b></h3>
+					<p class="o-que-text">
+						O nosso programa de stock options é a concessão do certificado de
+						sócio que garante aos beneficiários o direito a um pagamento no
+						evento de liquidez.
+					</p>
+					<p class="o-que-text">
+						Um certificado de sócio representa uma ação da Gama e o pagamento é
+						equivalente ao valor das ações da Gama no momento de liquidez,
+						multiplicado pelo número de certificados concedidos ao beneficiário.
+					</p>
+					<p class="o-que-text">
+						Isso significa que se o valor de mercado da Gama crescer, o valor
+						dos certificados crescerá na mesma proporção.
+					</p>
+				</div>
+				<video
+					id="o-que-image"
+					autoplay=""
+					loop=""
+					muted=""
+					playsinline=""
+					data-wf-ignore="true"
+				>
+					<source src="img/video/raio-girando.mp4" data-wf-ignore="true" />
+				</video>
+			</section>
+		</div>
+		<div id="como-funciona-wrap">
+			<section id="como-funciona">
+				<div id="como-funciona-title">
+					<h2>Como vai <br /><b>funcionar</b>?</h2>
+					<svg
+						id="como-funciona-title-minhoca"
+						width="310"
+						height="15"
+						viewBox="0 0 310 15"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M-8.07206e-06 0.585029V0C5.10957 0 7.62916 3.74946 10.0661 7.37553C12.4989 10.9955 14.7961 14.4146 19.3731 14.4146C23.9501 14.4146 26.2479 10.9955 28.6802 7.37553C31.1171 3.74946 33.6367 0 38.7463 0C43.8558 0 46.3765 3.74946 48.8124 7.37553C51.2452 10.9955 53.5429 14.4146 58.1204 14.4146C62.6979 14.4146 64.9962 10.9955 67.429 7.37553C69.8659 3.74946 72.3861 0 77.4951 0C82.6042 0 85.1253 3.74946 87.5612 7.37553C89.9945 10.9955 92.2923 14.4146 96.8703 14.4146C101.448 14.4146 103.746 10.9955 106.179 7.37553C108.616 3.74946 111.136 0 116.245 0C121.354 0 123.876 3.74946 126.314 7.37553C128.747 10.9955 131.045 14.4146 135.624 14.4146C140.202 14.4146 142.501 10.9955 144.934 7.37553C147.371 3.74946 149.891 0 155 0V0.585029C150.421 0.585029 148.123 4.00414 145.69 7.62411C143.253 11.2502 140.732 15 135.624 15C130.515 15 127.993 11.2502 125.555 7.62411C123.125 4.00342 120.827 0.585029 116.248 0.585029C111.67 0.585029 109.372 4.00413 106.939 7.62446C104.507 11.2448 101.982 15 96.8734 15C91.7643 15 89.2432 11.2502 86.8073 7.62411C84.374 4.00414 82.0762 0.585029 77.4982 0.585029C72.9202 0.585029 70.6224 4.00414 68.1896 7.62411C65.7527 11.2502 63.2326 15 58.1235 15C53.0145 15 50.4938 11.2502 48.0574 7.62411C45.6246 4.00414 43.3263 0.585029 38.7488 0.585029C34.1713 0.585029 31.8705 4.00342 29.4382 7.62339C27.0013 11.2495 24.4822 14.9993 19.3721 14.9993C14.262 14.9993 11.7434 11.2495 9.306 7.62339C6.87473 4.00342 4.5775 0.585029 -8.07206e-06 0.585029Z"
+							fill="#68DE5A"
+						/>
+						<path
+							d="M155 0.585029V0C160.11 0 162.629 3.74946 165.066 7.37553C167.499 10.9955 169.796 14.4146 174.373 14.4146C178.95 14.4146 181.248 10.9955 183.68 7.37553C186.117 3.74946 188.637 0 193.746 0C198.856 0 201.376 3.74946 203.812 7.37553C206.245 10.9955 208.543 14.4146 213.12 14.4146C217.698 14.4146 219.996 10.9955 222.429 7.37553C224.866 3.74946 227.386 0 232.495 0C237.604 0 240.125 3.74946 242.561 7.37553C244.995 10.9955 247.292 14.4146 251.87 14.4146C256.448 14.4146 258.746 10.9955 261.179 7.37553C263.616 3.74946 266.136 0 271.245 0C276.354 0 278.876 3.74946 281.314 7.37553C283.747 10.9955 286.045 14.4146 290.624 14.4146C295.202 14.4146 297.501 10.9955 299.934 7.37553C302.371 3.74946 304.891 0 310 0V0.585029C305.421 0.585029 303.123 4.00414 300.69 7.62411C298.253 11.2502 295.732 15 290.624 15C285.515 15 282.993 11.2502 280.555 7.62411C278.125 4.00342 275.827 0.585029 271.248 0.585029C266.67 0.585029 264.372 4.00413 261.939 7.62446C259.507 11.2448 256.982 15 251.873 15C246.764 15 244.243 11.2502 241.807 7.62411C239.374 4.00414 237.076 0.585029 232.498 0.585029C227.92 0.585029 225.622 4.00414 223.19 7.62411C220.753 11.2502 218.233 15 213.124 15C208.014 15 205.494 11.2502 203.057 7.62411C200.625 4.00414 198.326 0.585029 193.749 0.585029C189.171 0.585029 186.871 4.00342 184.438 7.62339C182.001 11.2495 179.482 14.9993 174.372 14.9993C169.262 14.9993 166.743 11.2495 164.306 7.62339C161.875 4.00342 159.578 0.585029 155 0.585029Z"
+							fill="#68DE5A"
+						/>
+					</svg>
+				</div>
+				<div id="como-funciona-cards">
+					<div class="como-funciona-card">
+						<div class="como-funciona-card-title">
+							<h3>1. Elegibilidade</h3>
+							<img src="img/ico/expand_more_w.svg" alt="" />
+						</div>
+						<div class="como-funciona-card-content">
+							<p>
+								Black belts com <b>mais de 1 ano de empresa</b> poderão se
+								inscrever no programa. Esse será o único pré-requisito para que
+								você possa demonstrar interesse em receber um pedacinho da Gama.
+							</p>
+						</div>
+					</div>
+					<div class="como-funciona-card">
+						<div class="como-funciona-card-title">
+							<h3>2. Inscrição</h3>
+							<img src="img/ico/expand_more_w.svg" alt="" />
+						</div>
+						<div class="como-funciona-card-content">
+							<p>
+								Será necessário enviar uma carta de intenção, um documento
+								escrito com as suas palavras que nos dê contexto sobre o seu
+								interesse em entrar no programa.
+							</p>
+							<p>
+								Para te ajudar, você pode criar um conteúdo que responda algumas
+								perguntas, como:
+							</p>
+							<ul>
+								<li>Como você impactou e impacta a Gama Academy?</li>
+								<li>
+									Como você pratica a cultura da Gama Academy no dia a dia?
+								</li>
+								<li>
+									Por que você acredita que merece fazer parte do programa de
+									stock options?
+								</li>
+								<li>
+									Como o seu passado, presente e futuro pessoal e profissional
+									se conectam com a Gama Academy?
+								</li>
+								<li>Quais resultados e legados você já construiu por aqui?</li>
+							</ul>
+							<p>
+								Porém, lembre-se que
+								<b>
+									deverá ser uma carta e não um formulário de perguntas e
+									respostas.
+								</b>
+								Além disso, a quantidade de páginas ou caracteres é livre. Já
+								recebemos cartas de 3 a 10 páginas por aqui.
+							</p>
+							<p>As cartas serão recebidas <b>até o dia 14/01/2022</b>.</p>
+						</div>
+					</div>
+					<div class="como-funciona-card">
+						<div class="como-funciona-card-title">
+							<h3>3. Seleção</h3>
+							<img src="img/ico/expand_more_w.svg" alt="" />
+						</div>
+						<div class="como-funciona-card-content">
+							<p>
+								O comitê de seleção, composto pelos sócios atuais, irá analisar
+								individualmente a sua carta e avaliar alguns outros critérios,
+								como performance nos cargos que ocupou/ocupa, desenvolvimento ao
+								longo do seu tempo de empresa e fit cultural com os nossos
+								valores no seu dia a dia e posicionamento.
+							</p>
+							<p>
+								Após a análise individual,
+								<b>
+									haverá uma avaliação final para aprovar ou não a sua
+									participação
+								</b>
+								no programa de stock options.
+							</p>
+						</div>
+					</div>
+					<div class="como-funciona-card">
+						<div class="como-funciona-card-title">
+							<h3>4. Premiação e Concessão</h3>
+							<img src="img/ico/expand_more_w.svg" alt="" />
+						</div>
+						<div class="como-funciona-card-content">
+							<p>
+								O resultado será divulgado na confraternização presencial, no
+								dia 28 de janeiro de 2022.
+							</p>
+							<p>
+								<b
+									>No dia 01 de fevereiro de 2022 você receberá o manual de
+									sócio da Gama</b
+								>, contrato de stock options para análise e assinatura e essa
+								será a sua data de start do seu certificado de sócio.
+							</p>
+						</div>
+					</div>
+				</div>
+				<a
+					href="https://docs.google.com/forms/d/e/1FAIpQLSeG_oLpZViJaImcUkkszhdc6AlcB1jvQNWD78H75pgVzwlCtA/viewform"
+					target="_blank"
+					id="como-funciona-button"
+				>
+					<button class="filled">Faça sua inscrição</button>
+				</a>
+			</section>
+		</div>
+		<div id="duvidas-wrap">
+			<section id="duvidas">
+				<div id="duvidas-title">
+					<h2>Dúvidas sobre o <br /><b>Gama Sócios</b></h2>
+					<svg
+						id="duvidas-title-minhoca"
+						width="310"
+						height="15"
+						viewBox="0 0 310 15"
+						fill="none"
+						xmlns="http://www.w3.org/2000/svg"
+					>
+						<path
+							d="M-8.07206e-06 0.585029V0C5.10957 0 7.62916 3.74946 10.0661 7.37553C12.4989 10.9955 14.7961 14.4146 19.3731 14.4146C23.9501 14.4146 26.2479 10.9955 28.6802 7.37553C31.1171 3.74946 33.6367 0 38.7463 0C43.8558 0 46.3765 3.74946 48.8124 7.37553C51.2452 10.9955 53.5429 14.4146 58.1204 14.4146C62.6979 14.4146 64.9962 10.9955 67.429 7.37553C69.8659 3.74946 72.3861 0 77.4951 0C82.6042 0 85.1253 3.74946 87.5612 7.37553C89.9945 10.9955 92.2923 14.4146 96.8703 14.4146C101.448 14.4146 103.746 10.9955 106.179 7.37553C108.616 3.74946 111.136 0 116.245 0C121.354 0 123.876 3.74946 126.314 7.37553C128.747 10.9955 131.045 14.4146 135.624 14.4146C140.202 14.4146 142.501 10.9955 144.934 7.37553C147.371 3.74946 149.891 0 155 0V0.585029C150.421 0.585029 148.123 4.00414 145.69 7.62411C143.253 11.2502 140.732 15 135.624 15C130.515 15 127.993 11.2502 125.555 7.62411C123.125 4.00342 120.827 0.585029 116.248 0.585029C111.67 0.585029 109.372 4.00413 106.939 7.62446C104.507 11.2448 101.982 15 96.8734 15C91.7643 15 89.2432 11.2502 86.8073 7.62411C84.374 4.00414 82.0762 0.585029 77.4982 0.585029C72.9202 0.585029 70.6224 4.00414 68.1896 7.62411C65.7527 11.2502 63.2326 15 58.1235 15C53.0145 15 50.4938 11.2502 48.0574 7.62411C45.6246 4.00414 43.3263 0.585029 38.7488 0.585029C34.1713 0.585029 31.8705 4.00342 29.4382 7.62339C27.0013 11.2495 24.4822 14.9993 19.3721 14.9993C14.262 14.9993 11.7434 11.2495 9.306 7.62339C6.87473 4.00342 4.5775 0.585029 -8.07206e-06 0.585029Z"
+							fill="#68DE5A"
+						/>
+						<path
+							d="M155 0.585029V0C160.11 0 162.629 3.74946 165.066 7.37553C167.499 10.9955 169.796 14.4146 174.373 14.4146C178.95 14.4146 181.248 10.9955 183.68 7.37553C186.117 3.74946 188.637 0 193.746 0C198.856 0 201.376 3.74946 203.812 7.37553C206.245 10.9955 208.543 14.4146 213.12 14.4146C217.698 14.4146 219.996 10.9955 222.429 7.37553C224.866 3.74946 227.386 0 232.495 0C237.604 0 240.125 3.74946 242.561 7.37553C244.995 10.9955 247.292 14.4146 251.87 14.4146C256.448 14.4146 258.746 10.9955 261.179 7.37553C263.616 3.74946 266.136 0 271.245 0C276.354 0 278.876 3.74946 281.314 7.37553C283.747 10.9955 286.045 14.4146 290.624 14.4146C295.202 14.4146 297.501 10.9955 299.934 7.37553C302.371 3.74946 304.891 0 310 0V0.585029C305.421 0.585029 303.123 4.00414 300.69 7.62411C298.253 11.2502 295.732 15 290.624 15C285.515 15 282.993 11.2502 280.555 7.62411C278.125 4.00342 275.827 0.585029 271.248 0.585029C266.67 0.585029 264.372 4.00413 261.939 7.62446C259.507 11.2448 256.982 15 251.873 15C246.764 15 244.243 11.2502 241.807 7.62411C239.374 4.00414 237.076 0.585029 232.498 0.585029C227.92 0.585029 225.622 4.00414 223.19 7.62411C220.753 11.2502 218.233 15 213.124 15C208.014 15 205.494 11.2502 203.057 7.62411C200.625 4.00414 198.326 0.585029 193.749 0.585029C189.171 0.585029 186.871 4.00342 184.438 7.62339C182.001 11.2495 179.482 14.9993 174.372 14.9993C169.262 14.9993 166.743 11.2495 164.306 7.62339C161.875 4.00342 159.578 0.585029 155 0.585029Z"
+							fill="#68DE5A"
+						/>
+					</svg>
+				</div>
+				<div id="duvidas-cards">
+					<div class="duvida-card">
+						<div class="duvida-card-header">
+							<h3>O que representa ter um certificado de sócio?</h3>
+							<!-- <img src="img/ico/expand_more_w.svg" alt=""> -->
+						</div>
+						<div class="duvida-content">
+							<p>
+								Representa que você terá um benefício financeiro adicional
+								revertido em ações da Gama para posterior venda.
+							</p>
+						</div>
+					</div>
+					<!-- <div class="duvida-card">
+						<div class="duvida-card-header">
+							<h3>
+								Qual é o período para que eu receba o pagamento pelas ações?
+							</h3>
+						</div>
+						<div class="duvida-content">
+							<p>
+								As ações serão “liquidadas” no evento de liquidez que acontecerá
+								em 2025.
+							</p>
+						</div>
+					</div> -->
+					<div class="duvida-card">
+						<div class="duvida-card-header">
+							<h3>Como fico sabendo todas as regras?</h3>
+							<!-- <img src="img/ico/expand_more_w.svg" alt=""> -->
+						</div>
+						<div class="duvida-content">
+							<p>
+								As pessoas black belts que forem contempladas no programa de
+								stock options receberão um manual de sócio junto com o contrato
+								de stock options para análise. Você poderá tirar todas as
+								dúvidas antes da assinatura.
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+		</div>
+		<div id="footer-wrap">
+			<footer>
+				<div id="footer-first-section">
+					<div id="logo-section">
+						<img src="img/logo-on-black.svg" alt="" />
+						<p>A sua aceleradora de carreiras.</p>
+					</div>
+					<div id="social-icons">
+						<a href="https://pt-br.facebook.com/gamaacademybr/" target="_blank">
+							<img src="img/ico/facebook.png" alt="Facebook da Gama Academy" />
+						</a>
+						<a href="https://www.instagram.com/gamaacademy/" target="_blank">
+							<img
+								src="img/ico/instagram.png"
+								alt="Instagram da Gama Academy"
+							/>
+						</a>
+						<a
+							href="https://br.linkedin.com/school/gama-academy/"
+							target="_blank"
+						>
+							<img src="img/ico/linkedin.png" alt="Linkedin da Gama Academy" />
+						</a>
+					</div>
+				</div>
+				<div id="footer-second-section">
+					<img src="img/ecossistema-anima.svg" alt="Ecossistema Ânima" />
+					<div id="endereco-wrap">
+						<p>
+							<b>
+								Gama Academy Ltda. CNPJ 20.612.827/0001-63 / Rua Capitão Antônio
+								Rosa, 376 - Cj. 32 - Pinheiros, São Paulo - SP, 01443-900
+							</b>
+						</p>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</body>
+</html>
